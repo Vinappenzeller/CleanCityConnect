@@ -3,10 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CleanCityConnect</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
     <header class="text-center text-3xl py-8">Willkommen bei CleanCityConnect</header>
+    <div id="map"></div>
+
+    <script src="App.js"></script>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJqD1gL1pgC5rpTxHKfp14TVUWjmpV5n0&callback=initMap"></script>
 </body>
 </html>
