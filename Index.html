@@ -9,15 +9,32 @@
         #map {
             height: 400px;
             width: 100%;
+            color: #1a202c;
+        }
+
+        body {
+            background-color: #1a202c;
+            color: #cbd5e0;
         }
     </style>
 </head>
 <body>
     <header class="text-center text-3xl py-8">Willkommen bei CleanCityConnect</header>
-    <div id="map"></div>
+    <div id="map" class="bg-gray-900"></div>
+
+    <div class="legend bg-gray-800 border border-gray-700 p-4 rounded">
+        <div class="legend-item flex items-center mb-2">
+            <span class="w-4 h-4 rounded-full bg-red-500 mr-2"></span> <span>Mülltonnen</span>
+        </div>
+        <div class="legend-item flex items-center mb-2">
+            <span class="w-4 h-4 rounded-full bg-yellow-500 mr-2"></span> <span>Müllhalden</span>
+        </div>
+        <div class="legend-item flex items-center mb-2">
+            <span class="w-4 h-4 rounded-full bg-blue-500 mr-2"></span> <span>Müllwagendepots</span>
+        </div>
+    </div>
 
     <script src="App.js"></script>
-
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJqD1gL1pgC5rpTxHKfp14TVUWjmpV5n0&callback=initMap"></script>
 </body>
 </html>

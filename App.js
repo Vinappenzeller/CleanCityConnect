@@ -4,7 +4,10 @@ function initMap() {
 
   var map = new google.maps.Map(document.getElementById("map"), {
     center: centerLatLng,
-    zoom: 10,
+    zoom: 12,
+    mapTypeId: "satellite", 
+    labels: false, 
+    
   });
 
   var trashCanMarkers = [
