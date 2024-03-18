@@ -7,7 +7,6 @@ function initMap() {
     zoom: 10,
   });
 
-
   var trashCanMarkers = [
     {
       position: { lat: 47.3769, lng: 8.5417 },
